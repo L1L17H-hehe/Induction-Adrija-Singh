@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>coordinate_follower</name>
+  <name>coordinate_follower_new</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
   <maintainer email="l1l17h.4@gmail.com">l1l17h</maintainer>

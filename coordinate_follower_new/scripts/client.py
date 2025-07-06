@@ -5,7 +5,7 @@ from rclpy.node import Node
 from rclpy.action import ActionClient
 from rclpy.callback_groups import ReentrantCallbackGroup
 from rclpy.executors import MultiThreadedExecutor
-from coordinate_follower.action import FollowCoordinate as Chase
+from coordinate_follower_new.action import FollowCoordinate as Chase
 import os
 
 class CoordinateFollowerClient(Node): 
@@ -34,7 +34,7 @@ class CoordinateFollowerClient(Node):
 
     def _read_coordinates(self):
         coordinates = []
-        path = '/home/l1l17h/ros2_ws/src/coordinate_follower/coordinates.txt'
+        path = '/home/l1l17h/ros2_ws/src/coordinate_follower_new/coordinates_new.txt'
         if not os.path.exists(path):
             self.get_logger().warn(f"Coordinate file not found at {path}")
             return []

@@ -7,7 +7,7 @@ from rclpy.callback_groups import ReentrantCallbackGroup
 from rclpy.executors import MultiThreadedExecutor
 import math 
 import time
-from coordinate_follower.action import FollowCoordinate as Chase
+from coordinate_follower_new.action import FollowCoordinate as Chase
 from nav_msgs.msg import Odometry 
 from geometry_msgs.msg import Twist
 

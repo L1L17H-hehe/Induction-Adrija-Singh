@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(coordinate_follower)
+project(coordinate_follower_new)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -17,7 +17,7 @@ find_package(rosidl_default_generators REQUIRED)
 find_package(rosidl_default_runtime REQUIRED)
 
 #generate action interfaces
-rosidl_generate_interfaces(coordinate_follower
+rosidl_generate_interfaces(coordinate_follower_new
   "action/FollowCoordinate.action"
   DEPENDENCIES geometry_msgs nav_msgs action_msgs
 )
@@ -25,24 +25,24 @@ rosidl_generate_interfaces(coordinate_follower
 # install python scripts as executables
 install(PROGRAMS
   scripts/server.py
-  DESTINATION lib/coordinate_follower
+  DESTINATION lib/coordinate_follower_new
   RENAME server
 )
 
 install(PROGRAMS
   scripts/client.py
-  DESTINATION lib/coordinate_follower
+  DESTINATION lib/coordinate_follower_new
   RENAME client
 )
 
 # install action files 
 install(DIRECTORY action
-  DESTINATION share/coordinate_follower
+  DESTINATION share/coordinate_follower_new
 )
 
 install(FILES
-  coordinates.txt
-  DESTINATION share/coordinate_follower
+  coordinates_new.txt
+  DESTINATION share/coordinate_follower_new
   )
 
 
