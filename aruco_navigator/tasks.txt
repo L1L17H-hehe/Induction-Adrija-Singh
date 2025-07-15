@@ -1,0 +1,24 @@
+#subscribing to camera data using sensor_msgs/Image type
+
+    1. define the __init__(self) function which basically initializes the class
+    2. initialize subscriber to the message type: self.subscriber = self.create_subscription(Image, '/images', self.scan_callback, 10)
+    3. convert ROS2 image messages to openCV images using cv_bridge
+
+Integrating open CV with ROS2 for image processing
+Detecting Aruco Tags with OpenCV 
+
+    1. Use openCV aruco detection module to identify tags from the DICT_ARUCO_ORIGINAL dictionary
+    2. for each frame check the presence of aruco tags with IDs 0 or 1
+Commanding robot motion based on visual input
+
+Logic: 
+    1. If tag 0 is detected right turn 90 degrees
+    2. If tag 1 is detected left turn 90 degrees
+    3. After completion continue moving forward until the next tag is detected
+    4. Repeat this for 5 detected tags
+
+
+Note: start with correct shebang
+
+1. import all basic necessary modules
+2. make class
