@@ -31,7 +31,7 @@ Terminal 2: run the node
 
 ros2 run aruco_navigator aruco_nav
 
-[!Note]
+>[!Note]
 > You can add the line "export TURTLEBOT3_MODEL=waffle" by :: echo "export TURTLEBOT3_MODEL=waffle" >> ~/.bashrc to make the change permanent
 > Similarly you can echo "export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:\<path to the directory with arUco tags>" >> ~/.bashrc
 
